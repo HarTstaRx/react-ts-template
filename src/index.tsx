@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TranslateProvider from './i18n/TranslateProvider';
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <TranslateProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </TranslateProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );
