@@ -6,7 +6,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint src/**/*.{ts,tsx}"
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix --max-warnings=0",
+    "pre-push": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.0",
@@ -102,27 +103,28 @@
     "extends": "react-app",
     "rules": {
       "indent": [
-        "error",
+        "warn",
         2
       ],
-      "no-mixed-spaces-and-tabs": "error",
+      "no-mixed-spaces-and-tabs": "warn",
       "max-lines": [
-        "error",
+        "warn",
         200
       ],
       "max-lines-per-function": [
-        "error",
+        "warn",
         60
       ],
       "max-nested-callbacks": [
-        "error",
+        "warn",
         4
       ]
     }
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn pre-push"
     }
   },
   "babel": {
