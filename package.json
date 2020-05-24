@@ -104,6 +104,7 @@
   },
   "eslintConfig": {
     "extends": "react-app",
+    "ignorePatterns": ["scripts/*.js"],
     "rules": {
       "indent": [
         "warn",
