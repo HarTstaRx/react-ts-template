@@ -1,0 +1,44 @@
+@import 'src/styles/_colors.scss';
+
+.MuiFormControl-root.custom-field,
+.custom-field {
+  margin-bottom: 15px;
+}
+
+.MuiButtonBase-root.MuiButton-root {
+  min-width: 155px;
+  min-height: 35px;
+  font-size: 0.9rem;
+}
+
+.dialog-container {
+  .MuiDialog-paperFullScreen {
+    height: auto;
+  }
+}
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-formControl.MuiInput-formControl {
+  font-size: 1rem;
+  height: 100%;
+}
+
+.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+  font-size: 1rem;
+}
+
+.material-icons.MuiIcon-root {
+  font-size: 1.5rem
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.Mui-disabled {
+  color: $color-white;
+  background: $color-grey-light;
+}
+
+.MuiInput-underline.Mui-error:after {
+  border: none;
+}
+
+.MuiFormHelperText-root.Mui-error {
+  display: none;
+}
