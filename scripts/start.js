@@ -27,7 +27,19 @@ const {
   prepareProxy,
   prepareUrls,
 } = require('react-dev-utils/WebpackDevServerUtils');
-const openBrowser = require('react-dev-utils/openBrowser');
+const open = require('open');
+const browsers = {
+  chrome: {
+    windows: 'chrome',
+    linux: 'google-chrome',
+    private: '--incognito'
+  },
+  firefox: {
+    windows: 'firefox',
+    linux: 'firefox',
+    private: '-private'
+  }
+};
 const paths = require('../config/paths');
 const configFactory = require('../config/webpack.config');
 const createDevServerConfig = require('../config/webpackDevServer.config');
@@ -139,7 +151,7 @@ checkBrowsers(paths.appPath, isInteractive)
       }
 
       console.log(chalk.cyan('Starting the development server...\n'));
-      openBrowser(urls.localUrlForBrowser);
+      open(urls.localUrlForBrowser, { app: [browsers.chrome.linux, browsers.chrome.private] });
     });
 
     ['SIGINT', 'SIGTERM'].forEach(function(sig) {
