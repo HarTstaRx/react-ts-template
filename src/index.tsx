@@ -18,9 +18,7 @@ ReactDOM.render(
     <TranslateProvider>
       <StateProvider>
         <ThemeProvider theme={defaultTheme}>
-          <React.StrictMode>
-            <App />
-          </React.StrictMode>
+          <App />
         </ThemeProvider>
       </StateProvider>
     </TranslateProvider>
