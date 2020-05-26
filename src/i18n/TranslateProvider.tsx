@@ -92,7 +92,7 @@ function IntlProviderWrapper(props: Props) {
     setContext(contextState => ({
       ...contextState,
       language: language,
-      messages: getMessages(culture),
+      messages: getMessages(language),
       culture: culture,
       decimalSeparator: numberSeparators.decimalSeparator,
       thousandSeparator: numberSeparators.thousandSeparator,

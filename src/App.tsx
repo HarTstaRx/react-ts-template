@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import InputsExample from './shared/components/_examples/InputsExample';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           Sidebar
         </div>
         <div className="content open-menu">
-          Content
+          <InputsExample />
         </div>
       </div>
     </div>
