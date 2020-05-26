@@ -3,8 +3,8 @@ import StateContextInterface from '../interfaces/state-context.interface';
 import { NotificationTypeEnum } from '../enums/notification-type.enum';
 
 export const StateContext = createContext<StateContextInterface>({
-  snackbar: { type: NotificationTypeEnum.INFO, title: '', messageId: '', isVisible: false },
-  changeSnackbar: null,
+  notification: { type: NotificationTypeEnum.INFO, title: '', messageId: '', isVisible: false },
+  changeNotification: null,
   user: null,
   changeUser: null,
 });
