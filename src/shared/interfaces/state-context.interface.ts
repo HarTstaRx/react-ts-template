@@ -2,8 +2,8 @@ import NotificationInterface from './notification.interface';
 import UserInterface from './user.interface';
 
 export default interface StateContextInterface {
-    snackbar: NotificationInterface;
+    notification: NotificationInterface;
     user: UserInterface | null;
-    changeSnackbar: any;
+    changeNotification: any;
     changeUser: any;
   }

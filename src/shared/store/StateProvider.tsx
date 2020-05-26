@@ -11,10 +11,10 @@ interface Props {
 }
 
 export default function StateProvider(props: Props) {
-  const changeSnackbar = (snackbar: NotificationInterface): void => {
+  const changeNotification = (notification: NotificationInterface): void => {
     setContext(contextState => ({
       ...contextState,
-      snackbar: snackbar,
+      notification: notification,
     }));
   };
 
@@ -27,20 +27,20 @@ export default function StateProvider(props: Props) {
   };
 
   const [context, setContext] = useState<StateContextInterface>({
-    snackbar: {
+    notification: {
       type: NotificationTypeEnum.INFO,
       isVisible: false,
       title: '',
       messageId: '',
     },
     user: null,
-    changeSnackbar: changeSnackbar,
+    changeNotification: changeNotification,
     changeUser: changeUser,
   });
 
   const contextValue = {
     ...context,
-    changeSnackbar,
+    changeNotification,
     changeUser,
   };
     
