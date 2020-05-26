@@ -38,6 +38,10 @@ const browsers = {
     windows: 'firefox',
     linux: 'firefox',
     private: '-private'
+  },
+  ie11: {
+    windows: 'iexplore',
+    private: '-private'
   }
 };
 const paths = require('../config/paths');
