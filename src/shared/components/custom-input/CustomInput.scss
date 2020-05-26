@@ -1,0 +1,114 @@
+@import 'src/styles/_colors.scss';
+
+.custom-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0px 10px 30px;
+  width: 300px;
+  min-height: 60px;
+  height: 60px;
+
+  &.reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .input-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $color-grey-medium;
+    width: 100%;
+    font-size: 0.8rem;
+    height: 28px;
+
+    span {
+      color: $color-secondary;
+      font-size: 1.1rem;
+    }
+  }
+
+  .custom-input {
+    height: 100%;
+    margin: auto 0;
+    width: 100%;
+  }
+
+  &__dropdown {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+      height: 32px;
+      width: 100%;
+      border-radius: 2px;
+
+      .MuiSelect-root {
+        padding: 0px 10px;
+        font-size: 0.9rem;
+        max-width: 295px;
+      }
+    }
+  }
+  
+  &__input {
+    position: relative;
+    width: 100%;
+
+    &.reverse {
+      display: flex;
+      align-items: center;
+      width: 55px;
+      height: 100%;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $color-grey;
+    }
+
+    .Mui-disabled .MuiOutlinedInput-notchedOutline {
+      border-color: $color-grey-light;
+    }
+
+    :not(.relevant) .MuiOutlinedInput-notchedOutline {
+      border: none;
+      border-bottom: 1px solid $color-primary;
+    }
+
+    :not(.relevant) .MuiInputBase-root.MuiInput-root.MuiInput-underline:before {
+      border: none;
+      border-bottom: 1px solid $color-primary;
+    }
+
+    .relevant {
+      border: 1px solid $color-primary;
+
+      :before, .MuiOutlinedInput-notchedOutline {
+        border-bottom: none;
+      }
+    }
+
+    &.error {
+      .MuiSvgIcon-root.MuiSelect-icon.MuiSelect-iconOutlined {
+        color: $color-red;
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $color-red;
+      }
+
+      .MuiInputBase-root.MuiInput-root.MuiInput-underline:before {
+        border-color: $color-red;
+      }
+    }
+  }
+
+  &__errors {
+    color: $color-red;
+    position: absolute;
+    font-size: 0.8rem;
+  }
+}
+
+.custom-field.textarea {
+  height: auto;
+}

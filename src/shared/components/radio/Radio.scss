@@ -1,0 +1,13 @@
+.MuiFormGroup-root.radio-group {
+    flex-wrap: initial;
+    flex-direction: row;
+  
+    label {
+      width: 100%;
+  
+      span {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  

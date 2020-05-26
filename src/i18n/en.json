@@ -1,3 +1,14 @@
 {
-    
+    "examples.inputs.text": "Text box",
+    "examples.inputs.textArea": "Text area",
+    "examples.inputs.number": "Number",
+    "examples.inputs.toggle": "Toggle",
+    "examples.inputs.dropdown": "Dropdown",
+    "examples.languages.es-es": "Spanish (Spain, International Sort)",
+    "examples.languages.ca-es": "Catalan (Catalonia)",
+    "examples.languages.en-gb": "English (United Kingdom)",
+    "examples.languages.en-us": "English (Usa)",
+    "shared.noData": "No data",
+    "shared.upload.validations.maxSize": "File size cannot exceed {0}Mb",
+    "shared.upload.validations.nameLength": "File name length cannot exceed {0} characters"
 }

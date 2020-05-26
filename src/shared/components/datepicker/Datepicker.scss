@@ -1,0 +1,28 @@
+@import 'src/styles/_colors.scss';
+
+.custom-field {
+  &__errors {
+    color: $color-red;
+    position: absolute;
+    font-size: 0.8rem;
+  }
+
+  .MuiFormControl-marginNormal {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .MuiButtonBase-root.MuiIconButton-root .MuiSvgIcon-root {
+    color: $color-primary;
+    font-size: 1.5rem;
+  }
+
+  .MuiFormControlLabel-root.Mui-disabled .MuiButtonBase-root.MuiIconButton-root .MuiSvgIcon-root {
+    color: $color-grey-light;
+  }
+
+  .MuiInputBase-input {
+    font-size: 0.9rem;
+  }
+}

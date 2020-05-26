@@ -1,0 +1,11 @@
+.MuiFormControlLabel-root {
+    width: 60px;
+    height: 38px;
+  }
+  
+  .MuiIconButton-label {
+    .MuiSwitch-input {
+      left: 0;
+      width: 0;
+  }
+}

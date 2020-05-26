@@ -1,3 +1,14 @@
 {
-    
+    "examples.inputs.text": "Caja de texto",
+    "examples.inputs.textArea": "Área de texto",
+    "examples.inputs.number": "Número",
+    "examples.inputs.toggle": "Interruptor",
+    "examples.inputs.dropdown": "Seleccionable",
+    "examples.languages.es-es": "Castellano (España, Internacional)",
+    "examples.languages.ca-es": "Catalán (Cataluña)",
+    "examples.languages.en-gb": "Inglés (Reino Unido)",
+    "examples.languages.en-us": "Inglés (Estados Unidos)",
+    "shared.noData": "Sin datos",
+    "shared.upload.validations.maxSize": "El tamaño de los archivos no puede sobrepasar {0}Mb",
+    "shared.upload.validations.nameLength": "El nombre de los archivos no puede sobrepasar los {0} caracteres de longitud"
 }

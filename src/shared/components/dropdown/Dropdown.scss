@@ -1,0 +1,12 @@
+@import 'src/styles/_colors.scss';
+
+.custom-field__dropdown {
+  .MuiCircularProgress-root.loading {
+    position: absolute;
+    right: 12px;
+  }
+  span.no-data {
+    color:gray;
+    font-size: 12px;
+  }
+}
